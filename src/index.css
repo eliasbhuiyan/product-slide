@@ -1,0 +1,77 @@
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* X */
+.productDetails_card.horizontal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Y */
+.productDetails_card.vertical {
+    display: flex;
+    gap: 10px;
+}
+
+.productDetails_card.vertical .thumble_imge_wrap {
+    order: -1;
+}
+
+/* Y */
+.productDetails_card.vertical .thumble_imge_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* X */
+.productDetails_card.horizontal .thumble_imge_wrap {
+    display: flex;
+    gap: 10px;
+}
+
+.thumle_items {
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+
+.thumle_items.active {
+    border: 1px solid #0345fa;
+}
+
+
+
+.large_image_wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.image.zoom {
+    transform: scale(1.5);
+}
+
+.zoomed-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 200%;
+    pointer-events: none;
+    transition: background-position 0.1s ease;
+}
