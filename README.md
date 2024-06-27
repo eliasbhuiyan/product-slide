@@ -1,8 +1,39 @@
-# React + Vite
+# Product Slide
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and customizable product slider component for React that allows users to change the product image by clicking on small images and zoom into the large image on hover.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Install the package using npm:
+
+```bash
+npm install product-slide
+```
+
+## Example
+
+```javascript
+import ProductSlide from "product-slide";
+
+const API = {
+  images: [
+    "https://i.imgur.com/QkIa5tT.jpeg",
+    "https://i.imgur.com/jb5Yu0h.jpeg",
+    "https://i.imgur.com/UlxxXyG.jpeg",
+  ],
+};
+
+function App() {
+  const settings = {
+    direction: "horizontal", // "vertical"
+    zoom: true, // false
+  };
+  return (
+    <div style={{ width: "500px" }}>
+      <ProductSlide settings={settings} api={API.images} />
+    </div>
+  );
+}
+
+export default App;
+```

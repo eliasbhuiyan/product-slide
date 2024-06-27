@@ -1,13 +1,32 @@
 {
-  "name": "product-details",
-  "private": true,
-  "version": "0.0.0",
+  "name": "product-slide",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
+  "author": "Elias Bhuiyan",
+  "homepage": "https://github.com/eliasbhuiyan/product-slide",
+  "main": "src/index.js",
+  "files": [
+    "src/components",
+    "src/index.css"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
+  },
+  "keywords": [
+    "product slide",
+    "react component",
+    "react product slide",
+    "product details",
+    "product zoom"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eliasbhuiyan/product-slide"
   },
   "dependencies": {
     "react": "^18.3.1",
