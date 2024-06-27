@@ -1,4 +1,4 @@
-import ProductCart from "./components/ProductCard";
+import ProductSlide from "./components/ProductSlide";
 
 const API = {
   images: [
@@ -10,12 +10,12 @@ const API = {
 
 function App() {
   const settings = {
-    direction: "vertical", // "vertical"
+    direction: "horizontal", // "vertical"
     zoom: true, // false
   };
   return (
     <div style={{ width: "500px" }}>
-      <ProductCart settings={settings} api={API.images} />
+      <ProductSlide settings={settings} api={API.images} />
     </div>
   );
 }

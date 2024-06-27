@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ProductCard = ({ api, settings }) => {
+const ProductSlide = ({ api, settings }) => {
   const [index, setIndex] = useState(0);
   const [position, setPosition] = useState("0% 0%");
   const [zoom, setZoom] = useState(false);
@@ -54,4 +54,4 @@ const ProductCard = ({ api, settings }) => {
   );
 };
 
-export default ProductCard;
+export default ProductSlide;
