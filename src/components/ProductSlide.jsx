@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../index.css";
+import "./eb.pslide.css";
 const ProductSlide = ({ api, settings }) => {
   const [index, setIndex] = useState(0);
   const [position, setPosition] = useState("0% 0%");
