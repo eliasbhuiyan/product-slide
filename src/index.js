@@ -1,2 +1,2 @@
 export { default as ProductSlider } from "./ProductSlide";
-import "./productSlide.css";
+export default "./productSlide.css";
