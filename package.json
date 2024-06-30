@@ -1,14 +1,13 @@
 {
   "name": "product-slide",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "author": "Elias Bhuiyan",
   "homepage": "https://github.com/eliasbhuiyan/product-slide",
   "main": "src/index.js",
   "files": [
-    "src/components",
-    "src/index.css"
+    "src/components"
   ],
   "scripts": {
     "dev": "vite",
