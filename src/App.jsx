@@ -1,4 +1,4 @@
-import ProductSlide from "./components/ProductSlide";
+import ProductSlide from "./ProductSlide";
 
 const API = {
   images: [

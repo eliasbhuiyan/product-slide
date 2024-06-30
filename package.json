@@ -1,15 +1,16 @@
 {
   "name": "product-slide",
+  "description": "A customizable product slider component for React",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.0",
   "type": "module",
   "author": "Elias Bhuiyan",
   "homepage": "https://github.com/eliasbhuiyan/product-slide",
   "main": "src/index.js",
   "files": [
-    "src/components",
     "src/index.js",
-    "src/index.css",
+    "src/ProductSlide.jsx",
+    "src/productSlide.css",
     "src/assets"
   ],
   "scripts": {
@@ -28,7 +29,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eliasbhuiyan/product-slide"
+    "url": "git+https://github.com/eliasbhuiyan/product-slide.git"
   },
   "dependencies": {
     "react": "^18.3.1",
