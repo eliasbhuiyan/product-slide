@@ -14,7 +14,7 @@ const ProductSlide = ({ api, settings }) => {
   if (!Array.isArray(api)) {
     return (
       <>
-        <div className="loading">
+        <div className="eb_loading_eb">
           <div className="loading-box">
             <div className="grid">
               <div className="color l1"></div>
@@ -31,7 +31,7 @@ const ProductSlide = ({ api, settings }) => {
   }
   return (
     <div
-      className={`productDetails_card ${
+      className={`eb_productDetails_card ${
         settings.direction ? settings.direction : "horizontal"
       } `}
     >
