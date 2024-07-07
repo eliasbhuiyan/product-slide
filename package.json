@@ -2,7 +2,7 @@
   "name": "product-slide",
   "description": "A customizable product slider component for React",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.8",
   "type": "module",
   "author": "Elias Bhuiyan",
   "homepage": "https://github.com/eliasbhuiyan/product-slide",

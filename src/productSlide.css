@@ -1,1 +1,166 @@
-img{width:100%;vertical-align:middle}.productDetails_card.horizontal{display:flex;flex-direction:column;gap:10px}.productDetails_card.horizontal .thumble_imge_wrap,.productDetails_card.vertical{display:flex;gap:10px}.productDetails_card.vertical .thumble_imge_wrap{order:-1;display:flex;flex-direction:column;gap:10px}.thumle_items{width:100px;cursor:pointer;border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;overflow:hidden}.image,.zoomed-image{width:100%;height:100%}.thumle_items.active{border:1px solid #0345fa}.large_image_wrap{position:relative;overflow:hidden;}.image{transition:transform .3s}.image.zoom{transform:scale(1.5); -webkit-transform:scale(1.5); -moz-transform:scale(1.5); -ms-transform:scale(1.5); -o-transform:scale(1.5);cursor:crosshair}.zoomed-image{position:absolute;top:0;left:0;background-size:200%;pointer-events:none;transition:background-position .1s}
+img {
+    width: 100%;
+    vertical-align: middle
+}
+
+.productDetails_card.horizontal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.productDetails_card.horizontal .thumble_imge_wrap,
+.productDetails_card.vertical {
+    display: flex;
+    gap: 10px
+}
+
+.productDetails_card.vertical .thumble_imge_wrap {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.thumle_items {
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden
+}
+
+.image,
+.zoomed-image {
+    width: 100%;
+    height: 100%
+}
+
+.thumle_items.active {
+    border: 1px solid #0345fa
+}
+
+.large_image_wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    transition: transform .3s
+}
+
+.image.zoom {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    cursor: crosshair
+}
+
+.zoomed-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 200%;
+    pointer-events: none;
+    transition: background-position .1s
+}
+
+/* loading */
+.loading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-box {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.color {
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 120px 120px 120px;
+    grid-template-areas:
+        "l1 l2 l3"
+        "l1 l2 l4"
+        "l6 l6 l5";
+    gap: 10px;
+}
+
+.l1 {
+    grid-area: l1;
+    animation: Loading 6s 0s infinite linear;
+    -webkit-animation: Loading 6s 0s infinite linear;
+}
+
+.l2 {
+    grid-area: l2;
+    animation: Loading 5s 1s infinite linear;
+    -webkit-animation: Loading 5s 1s infinite linear;
+}
+
+.l3 {
+    grid-area: l3;
+    animation: Loading 4s 2s infinite linear;
+    -webkit-animation: Loading 4s 2s infinite linear;
+}
+
+.l4 {
+    grid-area: l4;
+    animation: Loading 3s 3s infinite linear;
+    -webkit-animation: Loading 3s 3s infinite linear;
+}
+
+.l5 {
+    grid-area: l5;
+    animation: Loading 2s 4s infinite linear;
+    -webkit-animation: Loading 2s 4s infinite linear;
+}
+
+.l6 {
+    grid-area: l6;
+    animation: Loading 1s 5s infinite linear;
+    -webkit-animation: Loading 1s 5s infinite linear;
+}
+
+@keyframes Loading {
+    0% {
+        background-color: #eee;
+    }
+
+    50% {
+        background-color: #333;
+    }
+
+    100% {
+        background-color: #eee;
+    }
+}
+
+@media (max-width: 500px) {
+    .loading-box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .grid {
+        grid-template-rows: 80px 80px 80px;
+    }
+}

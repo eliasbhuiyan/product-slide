@@ -11,6 +11,24 @@ const ProductSlide = ({ api, settings }) => {
     const y = ((e.clientY - top) / height) * 100;
     setPosition(`${x}% ${y}%`);
   };
+  if (!Array.isArray(api)) {
+    return (
+      <>
+        <div className="loading">
+          <div className="loading-box">
+            <div className="grid">
+              <div className="color l1"></div>
+              <div className="color l2"></div>
+              <div className="color l3"></div>
+              <div className="color l4"></div>
+              <div className="color l5"></div>
+              <div className="color l6"></div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
   return (
     <div
       className={`productDetails_card ${
