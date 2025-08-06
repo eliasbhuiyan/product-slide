@@ -1,3 +1,3 @@
-import ProductSlide from './ProductSlide';
+import ProductSlider from './ProductSlide';
 
-export default ProductSlide;
+export default ProductSlider;
